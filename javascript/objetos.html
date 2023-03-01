@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script>
+      const nome = "Gol";
+      const marca = "VW";
+      const ano = 2010;
+      const valor = 25000;
+      const cor = "prata";
+
+      const carro = {
+        nome: "Gol",
+        marca: "VW",
+        ano: 2010,
+        valor: 25000,
+        cor: "prata",
+        imprimir: function () {
+            console.log(`Minhas informações são: ${this.nome} - ${this.marca} - ${this.ano} - ${this.valor} - ${this.cor}`)
+        }
+      }
+
+      const carros = [carro];
+      carros.push(carro)
+
+      console.log(carro.nome);
+      const propriedade = "ano";
+      console.log(carro[propriedade]);
+
+      carro.imprimir();
+
+      if(carro) {
+        console.log("teste");
+      }
+
+      carro.novaInfo = "aaa";
+      carro.ano = 2011;
+      console.log(carro);
+
+      delete carro.novaInfo;
+      console.log(carro);
+
+    </script>
+</head>
+
+</html>
